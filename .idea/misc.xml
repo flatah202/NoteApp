@@ -6,9 +6,26 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/gradient.xml" value="0.1125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/gradient_background.xml" value="0.1125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/gradient_color.xml" value="0.1125" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_first_page.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/gradinet.xml" value="0.2203125" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_add_new_notes.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_first_page.xml" value="0.25" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_money_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_monthly_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_shopping_page.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_study_page.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_todo_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_work_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_work_page2.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_yearly_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/app_bar_study_options.xml" value="0.20018115942028986" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/content_study_options.xml" value="0.20018115942028986" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/first_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/meun.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/nav_header_study_options.xml" value="0.20018115942028986" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/menu/setting_options.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/menu/study_options.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

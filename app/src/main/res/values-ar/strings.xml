@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الملاحظات</string>
+
+    <string name="title_activity_study_options">خيارات الدراسة</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">ضبط</string>
+    <string name="Delete">حذف</string>
+    <string name="Arabic">العربية</string>
+    <string name="English">الانجليزية</string>
+    <string name="Launguage">العربية</string>
+
+
+
+</resources>

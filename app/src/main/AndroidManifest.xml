@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp">
         <activity
+            android:name=".Study_page"
+            android:exported="false" />
+        <activity
+            android:name=".AddNew_notes"
+            android:exported="false" />
+        <activity
+            android:name=".Shopping_page"
+            android:exported="false" />
+        <activity
+            android:name=".Work_page"
+            android:exported="false" />
+        <activity
+            android:name=".Yearly_page"
+            android:exported="false" />
+        <activity
+            android:name=".Money_page"
+            android:exported="false" />
+        <activity
+            android:name=".Monthly_page"
+            android:exported="false" />
+        <activity
+            android:name=".Todo_page"
+            android:exported="false" />
+        <activity
             android:name=".First_page"
             android:exported="false" />
         <activity
