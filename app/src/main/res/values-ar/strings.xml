@@ -12,7 +12,14 @@
     <string name="Delete">حذف</string>
     <string name="Arabic">العربية</string>
     <string name="English">الانجليزية</string>
-    <string name="Launguage">العربية</string>
+    <string name="Language">العربية</string>
+    <string name="Work_button">ملاحظات العمل</string>
+    <string name="Shopping_button"> ملاحظات التسوق</string>
+    <string name="To_do_list">ملاحظات المهام</string>
+    <string name="Study_button">ملاحظات الدراسة</string>
+    <string name="Monthly_button">أهداف شهرية</string>
+    <string name="Yearly_button">أهداف سنوية</string>
+    <string name="Money_button">الميزانية المالية</string>
 
 
 

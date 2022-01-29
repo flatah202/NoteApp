@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp">
         <activity
+            android:name=".Language_page"
+            android:exported="false" />
+        <activity
             android:name=".Study_page"
             android:exported="false" />
         <activity

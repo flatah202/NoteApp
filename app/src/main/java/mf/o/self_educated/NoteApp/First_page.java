@@ -3,16 +3,19 @@ package mf.o.self_educated.NoteApp;
 import static mf.o.self_educated.NoteApp.R.menu.setting_options;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -20,10 +23,9 @@ import java.util.Locale;
 public class First_page extends AppCompatActivity {
 
     // All the button in the first page
-    private ImageView work , shopping , todo , study, money, monthly , yearly, add;
+    private Button work , shopping , todo , study, money, monthly , yearly, add;
 
     public View Ar , En , Lan;
-    public Menu am;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +39,8 @@ public class First_page extends AppCompatActivity {
         monthly = findViewById(R.id.monthly_button);
         yearly = findViewById(R.id.yearly_button);
         add = findViewById(R.id.add_button);
-        Ar = findViewById(R.id.Arabic);
-        En = findViewById(R.id.English);
+//        Ar = findViewById(R.id.Arabic);
+//        En = findViewById(R.id.English);
         Lan = findViewById(R.id.language);
 
 
@@ -131,37 +133,20 @@ public class First_page extends AppCompatActivity {
 
 
 
-//        Ar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                ChangeLanguage ();
-//            }
-//        });// End of setOnClickListener for Ar
-//
-//        En.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                ChangeLanguage ("En");
-//            }
-//        });// End of setOnClickListener for En
+
+
+
+
+
+
 
 
     }// End of onCreate(Bundle savedInstanceState)
 
 
 
-//    private void ChangeLanguage (String Language){
-//
-//        Locale locale = new Locale(Language);
-//        Locale.setDefault(locale);
-//        Configuration configuration = new Configuration();
-//        configuration.locale=locale;
-//        getApplicationContext().getResources().updateConfiguration(configuration,getApplicationContext().getResources().getDisplayMetrics());
-//
-//
-//
-//    }// End of ChangeLanguage class
-//
+
+
 
 
 
@@ -186,6 +171,11 @@ public class First_page extends AppCompatActivity {
                 return true;
             case R.id.delete:
                 Toast.makeText(this, "You have delete it successfully", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.language:
+            Intent intent = new Intent(First_page.this,Language_page.class);
+            startActivity(intent);
+
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

@@ -10,5 +10,12 @@
     <string name="Delete">Delete</string>
     <string name="Arabic">Arabic</string>
     <string name="English">English</string>
-    <string name="Launguage">Language</string>
+    <string name="Language">Language</string>
+    <string name="Work_button">Work List</string>
+    <string name="Shopping_button">Shopping List</string>
+    <string name="To_do_list">To Do List</string>
+    <string name="Study_button">Study List</string>
+    <string name="Monthly_button">Monthly Gaols</string>
+    <string name="Yearly_button">Yearly Gaols</string>
+    <string name="Money_button">Financial List</string>
 </resources>
