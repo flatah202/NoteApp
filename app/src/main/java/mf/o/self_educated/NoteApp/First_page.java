@@ -25,7 +25,7 @@ public class First_page extends AppCompatActivity {
     // All the button in the first page
     private Button work , shopping , todo , study, money, monthly , yearly, add;
 
-    public View Ar , En , Lan;
+    public View Lan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +38,6 @@ public class First_page extends AppCompatActivity {
         money = findViewById(R.id.money_button);
         monthly = findViewById(R.id.monthly_button);
         yearly = findViewById(R.id.yearly_button);
-        add = findViewById(R.id.add_button);
-//        Ar = findViewById(R.id.Arabic);
-//        En = findViewById(R.id.English);
         Lan = findViewById(R.id.language);
 
 
@@ -123,13 +120,6 @@ public class First_page extends AppCompatActivity {
 
 
         //Add button move to
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(First_page.this, AddNew_notes.class);
-                startActivity(intent);
-            }// End of onClick
-        });// End of setOnClickListener for add
 
 
 
@@ -167,15 +157,18 @@ public class First_page extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.show_all:
-                Toast.makeText(this, "All notes are here ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.message_show_all), Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.delete:
-                Toast.makeText(this, "You have delete it successfully", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.language:
-            Intent intent = new Intent(First_page.this,Language_page.class);
-            startActivity(intent);
+                Toast.makeText(this,  getString(R.string.message_delete),Toast.LENGTH_SHORT).show();
+             return true;
+            case R.id.Arabic_button:
+                LocalHelper.setLocale(this,"ar");//for french;
 
+
+                return true;
+            case R.id.English_button:
+                LocalHelper.setLocale(this,"en-rUS");//for french;
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

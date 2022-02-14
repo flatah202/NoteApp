@@ -10,6 +10,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">ضبط</string>
     <string name="Delete">حذف</string>
+    <string name="Show_all">اظهار الكل</string>
     <string name="Arabic">العربية</string>
     <string name="English">الانجليزية</string>
     <string name="Language">العربية</string>
@@ -20,6 +21,13 @@
     <string name="Monthly_button">أهداف شهرية</string>
     <string name="Yearly_button">أهداف سنوية</string>
     <string name="Money_button">الميزانية المالية</string>
+    <string name="changed">تم تغسر اللغة بنجاح </string>
+    <string name="message_show_all">جميع الملاحظات </string>
+    <string name="message_delete">تم حذف الجميع</string>
+
+
+
+
 
 
 

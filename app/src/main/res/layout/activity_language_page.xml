@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".Language_page">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changed">
+
+        <Button
+            android:id="@+id/Arabic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Arabic"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="315dp" />
+
+        <Button
+            android:id="@+id/English_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/English"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="315dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/changed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="@string/changed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

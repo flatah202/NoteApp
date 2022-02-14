@@ -14,30 +14,33 @@ import java.util.Locale;
 
     public class LocalHelper {
 
+
         private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
 
-        public static Context onAttach(Context context) {
-            String lang = getPersistedData(context, Locale.getDefault().getLanguage());
-            return setLocale(context, lang);
+        public static void onCreate(Context context) {
+
+            String lang;
+            if(getLanguage(context).isEmpty()){
+                lang = getPersistedData(context, Locale.getDefault().getLanguage());
+            }else {
+                lang = getLanguage(context);
+            }
+
+            setLocale(context, lang);
         }
 
-        public static Context onAttach(Context context, String defaultLanguage) {
+        public static void onCreate(Context context, String defaultLanguage) {
             String lang = getPersistedData(context, defaultLanguage);
-            return setLocale(context, lang);
+            setLocale(context, lang);
         }
 
         public static String getLanguage(Context context) {
             return getPersistedData(context, Locale.getDefault().getLanguage());
         }
 
-        public static Context setLocale(Context context, String language) {
+        public static void setLocale(Context context, String language) {
             persist(context, language);
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                return updateResources(context, language);
-            }
-
-            return updateResourcesLegacy(context, language);
+            updateResources(context, language);
         }
 
         private static String getPersistedData(Context context, String defaultLanguage) {
@@ -53,20 +56,7 @@ import java.util.Locale;
             editor.apply();
         }
 
-        @TargetApi(Build.VERSION_CODES.N)
-        private static Context updateResources(Context context, String language) {
-            Locale locale = new Locale(language);
-            Locale.setDefault(locale);
-
-            Configuration configuration = context.getResources().getConfiguration();
-            configuration.setLocale(locale);
-            configuration.setLayoutDirection(locale);
-
-            return context.createConfigurationContext(configuration);
-        }
-
-        @SuppressWarnings("deprecation")
-        private static Context updateResourcesLegacy(Context context, String language) {
+        private static void updateResources(Context context, String language) {
             Locale locale = new Locale(language);
             Locale.setDefault(locale);
 
@@ -74,13 +64,10 @@ import java.util.Locale;
 
             Configuration configuration = resources.getConfiguration();
             configuration.locale = locale;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-                configuration.setLayoutDirection(locale);
-            }
 
             resources.updateConfiguration(configuration, resources.getDisplayMetrics());
 
-            return context;
+
         }
 
 }// End of LocalHelper class
