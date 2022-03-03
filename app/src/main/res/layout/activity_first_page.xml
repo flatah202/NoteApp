@@ -2,97 +2,121 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".First_page"
     android:background="@color/DefaultColor"
-    >
+    tools:context=".First_page">
+
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="403dp"
+        android:layout_height="548dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/work_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/path_1"
+            android:id="@+id/work_butt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
             android:text="@string/Work_button"
-            android:textSize="25dp" />
+            android:textAllCaps="true"
+            android:textColor="@color/withColor"
+            android:textSize="@dimen/_24sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="124dp" />
 
         <Button
-            android:id="@+id/shopping_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/path_2"
+            android:id="@+id/shopping_butt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
             android:text="@string/Shopping_button"
-            android:textSize="25dp" />
+            android:textAllCaps="true"
+            android:textColor="@color/withColor"
+            android:textSize="@dimen/_24sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/work_butt" />
 
         <Button
-            android:id="@+id/todo_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/path_4"
+            android:id="@+id/todo_butt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
             android:text="@string/To_do_list"
-            android:textSize="25dp" />
+            android:textAllCaps="true"
+            android:textColor="@color/withColor"
+            android:textSize="@dimen/_24sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shopping_butt" />
 
         <Button
-            android:id="@+id/study_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/path_3"
+            android:id="@+id/study_butt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
             android:text="@string/Study_button"
-            android:textSize="25dp" />
+            android:textAllCaps="true"
+            android:textColor="@color/withColor"
+            android:textSize="@dimen/_24sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/todo_butt" />
 
         <Button
-            android:id="@+id/monthly_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/path_5"
+            android:id="@+id/monthly_butt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
             android:text="@string/Monthly_button"
-            android:textSize="25dp" />
+            android:textAllCaps="true"
+            android:textColor="@color/withColor"
+            android:textSize="@dimen/_24sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/study_butt" />
 
         <Button
-            android:id="@+id/yearly_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/path_6"
+            android:id="@+id/yearly_butt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/ColorBackground"
             android:text="@string/Yearly_button"
-            android:textSize="25dp" />
+            android:textAllCaps="true"
+            android:textColor="@color/withColor"
+            android:textSize="@dimen/_24sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monthly_butt" />
 
         <Button
-            android:id="@+id/money_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/path_8"
+            android:id="@+id/money_butt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/Yallow"
             android:text="@string/Money_button"
-            android:textSize="25dp" />
+            android:textAllCaps="true"
+            android:textColor="@color/withColor"
+            android:textSize="@dimen/_24sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yearly_butt" />
+
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/add_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:outlineAmbientShadowColor="@color/first"
-        android:background="@android:drawable/ic_menu_add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

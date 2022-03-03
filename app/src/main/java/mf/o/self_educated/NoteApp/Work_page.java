@@ -1,26 +1,49 @@
 package mf.o.self_educated.NoteApp;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import java.security.PublicKey;
 
 public class Work_page extends AppCompatActivity {
 
-    EditText input;
+    public EditText titleNote , inputNote;
+    public TextView save_show;
+    public Button save;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_page);
-        input = findViewById(R.id.input);
+        titleNote = (EditText) findViewById(R.id.note_title);
+//        inputNote= (EditText) findViewById(R.id.input_note);
+        save = (Button) findViewById(R.id.save_notes);
+        save_show = (TextView) findViewById(R.id.save_show);
 
 
 
-    }// End of onCreate
+        //
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                save_show.setText("Title Note: "+titleNote.getText());
 
 
-}// End of Work_page class
+            }
+        });
+
+
+    }// End of Override
+
+
+
+}// End of Work_page claas

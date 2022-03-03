@@ -1,5 +1,6 @@
 package mf.o.self_educated.NoteApp;
 
+import static android.widget.Toast.LENGTH_SHORT;
 import static mf.o.self_educated.NoteApp.R.menu.setting_options;
 
 import androidx.annotation.NonNull;
@@ -31,14 +32,15 @@ public class First_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_page);
-        work = findViewById(R.id.work_button);
-        shopping = findViewById(R.id.shopping_button);
-        todo = findViewById(R.id.todo_button);
-        study = findViewById(R.id.study_button);
-        money = findViewById(R.id.money_button);
-        monthly = findViewById(R.id.monthly_button);
-        yearly = findViewById(R.id.yearly_button);
-        Lan = findViewById(R.id.language);
+        work = findViewById(R.id.work_butt);
+        shopping = findViewById(R.id.shopping_butt);
+        todo = findViewById(R.id.todo_butt);
+        study = findViewById(R.id.study_butt);
+        money = findViewById(R.id.money_butt);
+        monthly = findViewById(R.id.monthly_butt);
+        yearly = findViewById(R.id.yearly_butt);
+//        add = findViewById(R.id.add_butt);
+//        Lan = findViewById(R.id.language);
 
 
 
@@ -77,7 +79,7 @@ public class First_page extends AppCompatActivity {
         }); // End of setOnClickListener for  to do
 
 
-//         study buttcon move to
+//         study button move to
         study.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -157,19 +159,12 @@ public class First_page extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.show_all:
-                Toast.makeText(this, getString(R.string.message_show_all), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.message_show_all), LENGTH_SHORT).show();
                 return true;
             case R.id.delete:
-                Toast.makeText(this,  getString(R.string.message_delete),Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,  getString(R.string.message_delete), LENGTH_SHORT).show();
              return true;
-            case R.id.Arabic_button:
-                LocalHelper.setLocale(this,"ar");//for french;
 
-
-                return true;
-            case R.id.English_button:
-                LocalHelper.setLocale(this,"en-rUS");//for french;
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

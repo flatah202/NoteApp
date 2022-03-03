@@ -22,4 +22,9 @@
     <string name="changed">You have change the language successfully </string>
     <string name="message_show_all">All notes are here </string>
     <string name="message_delete">You have delete all </string>
+    <string name="notes">Write your note here</string>
+    <string name="Title">Note Title</string>
+    <string name="input_note">Write here</string>
+    <string name="Save">Save</string>
+
 </resources>

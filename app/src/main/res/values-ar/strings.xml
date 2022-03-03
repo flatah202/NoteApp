@@ -24,11 +24,10 @@
     <string name="changed">تم تغسر اللغة بنجاح </string>
     <string name="message_show_all">جميع الملاحظات </string>
     <string name="message_delete">تم حذف الجميع</string>
-
-
-
-
-
+    <string name="notes">أكتب الملاحظات هنا</string>
+    <string name="Title"> عنوان الملاحظة</string>
+    <string name="input_note">أكتب هنا</string>
+    <string name="Save">حفظ</string>
 
 
 </resources>

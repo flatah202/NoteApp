@@ -33,13 +33,6 @@ public class Language_page extends AppCompatActivity {
         ar = findViewById(R.id.Arabic_button);
         en = findViewById(R.id.English_button);
         changed = findViewById(R.id.changed);
-        work = findViewById(R.id.work_button);
-        shopping = findViewById(R.id.shopping_button);
-        todo = findViewById(R.id.todo_button);
-        study = findViewById(R.id.study_button);
-        money = findViewById(R.id.money_button);
-        monthly = findViewById(R.id.monthly_button);
-        yearly = findViewById(R.id.yearly_button);
 
 
 

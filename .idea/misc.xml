@@ -10,11 +10,12 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/gradinet.xml" value="0.2203125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_add_new_notes.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_first_page.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_first_page.xml" value="0.18" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_language_page.xml" value="0.25" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_money_page.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_monthly_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_save_list_note.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_shopping_page.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_study_page.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_todo_page.xml" value="0.20416666666666666" />
@@ -37,12 +38,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.22" />
-      </ProjectState>
-    </option>
   </component>
 </project>
