@@ -24,7 +24,6 @@ public class Work_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_page);
         titleNote = (EditText) findViewById(R.id.note_title);
-//        inputNote= (EditText) findViewById(R.id.input_note);
         save = (Button) findViewById(R.id.save_notes);
         save_show = (TextView) findViewById(R.id.save_show);
 

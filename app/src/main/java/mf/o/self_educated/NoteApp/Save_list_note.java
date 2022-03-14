@@ -9,25 +9,12 @@ import android.widget.TextView;
 
 public class Save_list_note extends AppCompatActivity {
 
-    TextView listShow;
-    EditText titleNote , inputNote;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_save_list_note);
-        listShow = (TextView) findViewById(R.id.listShow);
-
-
-
-        listShow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                listShow.setText("titleNote: "+titleNote.getText());
-            }
-        });
-
-    }// End of Override
-
+    }// End of onCreate method
 
 }/// End of Save_list_note claas

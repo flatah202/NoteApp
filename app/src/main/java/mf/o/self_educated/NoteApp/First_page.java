@@ -4,22 +4,16 @@ import static android.widget.Toast.LENGTH_SHORT;
 import static mf.o.self_educated.NoteApp.R.menu.setting_options;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import java.util.Locale;
 
 public class First_page extends AppCompatActivity {
 
@@ -32,116 +26,66 @@ public class First_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_page);
-        work = findViewById(R.id.work_butt);
-        shopping = findViewById(R.id.shopping_butt);
-        todo = findViewById(R.id.todo_butt);
-        study = findViewById(R.id.study_butt);
-        money = findViewById(R.id.money_butt);
-        monthly = findViewById(R.id.monthly_butt);
-        yearly = findViewById(R.id.yearly_butt);
-//        add = findViewById(R.id.add_butt);
-//        Lan = findViewById(R.id.language);
+    }//End of onCreate(Bundle savedInstanceState)
 
 
 
+    //WorkButton method
+    public void workButton (View view){
+        Intent workButton = new Intent(First_page.this, Work_page.class);
+        startActivity(workButton);
+    }// End of workButton method
+
+
+    //ShoppingButton method
+    public void shoppingButton(View view){
+        Intent shoppingButton  =  new Intent(First_page.this, Shopping_page.class);
+        startActivity(shoppingButton);
+
+    }// End of shoppingButton method
 
 
 
-//      work button move to
-        work.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(First_page.this,Work_page.class);
-                startActivity(intent);
-            }// End of onClick
-        });// End of setOnClickListener for work
+    // todoButton method
+    public void todoButton (View view){
+        Intent todoButton = new Intent(First_page.this, Todo_page.class);
+        startActivity(todoButton);
+    }// End of todoButton method
 
 
-
-        //shopping button move to
-        shopping.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(First_page.this,Shopping_page.class);
-                startActivity(intent);
-            } // End of onClick
-        }); // End of setOnClickListener for shopping
+    //StudyButton method
+    public void studyButton(View view){
+        Intent studyButton = new Intent(First_page.this, Study_page.class);
+        startActivity(studyButton);
+    }// End of StudyButton method
 
 
-        //   TO DO button move to
-        todo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent =  new Intent(First_page.this, Todo_page.class);
-                startActivity(intent);
-            } // End of onClick
-        }); // End of setOnClickListener for  to do
+    //MonthlyGoalButton method
+    public void monthlyGoalButton (View view){
+        Intent monthlyGoalButton = new Intent(First_page.this , Monthly_page.class);
+        startActivity(monthlyGoalButton);
+    }// End of monthlyGoalButton method
 
-
-//         study button move to
-        study.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(First_page.this, Study_page.class);
-                startActivity(intent);
-            }// End of onClick
-        });// End of setOnClickListener for study
-
-
-        //monthly button move to
-        monthly.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(First_page.this, Monthly_page.class);
-                startActivity(intent);
-            }// End of onClick
-        });// End of setOnClickListener for monthly
-
-
-        //yearly button move to
-        yearly.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(First_page.this, Yearly_page.class);
-                startActivity(intent);
-            }// End of onClick
-        }); // End of setOnClickListener for yearly
+    //yearlyGoalButton method
+    public void yearlyGoalButton (View view){
+        Intent yearlyGoalButton = new Intent(First_page.this , Yearly_page.class);
+        startActivity(yearlyGoalButton);
+    }// End of yearlyGoalButton method
 
 
 
-        //money button move to
-        money.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(First_page.this,Money_page.class);
-                startActivity(intent);
-            }// End of onClick
-        });// End of setOnClickListener for money
+    //FinancialButton method
+    public void FinancialButton (View view){
+        Intent FinancialButton = new Intent(First_page.this , Money_page.class);
+        startActivity(FinancialButton);
+    }// End of the FinancialButton method
 
 
-
-        //Add button move to
-
-
-
-
-
-
-
-
-
-
-
-    }// End of onCreate(Bundle savedInstanceState)
-
-
-
-
-
-
-
-
+    //addButton method
+    public void addButton (View view){
+        Intent addButton = new Intent(First_page.this , AddNew_notes.class);
+        startActivity(addButton);
+    }
 
 
 

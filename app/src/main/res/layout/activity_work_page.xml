@@ -28,18 +28,8 @@
             android:id="@+id/save_show"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/Title"/>
+            android:hint="@string/Title" />
 
-        <!--        <EditText-->
-        <!--            android:id="@+id/input_note"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="2dp"-->
-        <!--            android:layout_marginLeft="8dp"-->
-        <!--            android:layout_marginRight="8dp"-->
-        <!--            android:layout_marginBottom="8dp"-->
-        <!--            android:layout_weight="1"-->
-        android:hint="@string/input_note"/>
     </LinearLayout>
 
 
@@ -48,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/save_notes"
+        android:layout_margin="8dp"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@id/liner_page"
         android:layout_alignLeft="@id/liner_page"

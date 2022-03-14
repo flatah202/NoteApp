@@ -5,31 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Shopping_page"
-    android:background="@drawable/background"
+    android:background="@color/DefaultColor"
     >
 
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/input"
-            android:focusable="false"
-            android:imeOptions="flagNoExtractUi"
-            android:inputType="textMultiLine"
-            android:onClick="onBtnClicked"
-            tools:ignore="OnClick,UsingOnClickInXml">
-
-        </EditText>
-
-
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
