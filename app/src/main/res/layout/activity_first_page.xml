@@ -14,7 +14,6 @@
         android:layout_height="548dp"
         android:layout_margin="16dp"
         android:layout_marginStart="16dp"
-
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="45dp"
@@ -30,12 +29,13 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:layout_weight="2"
-            android:background="@android:color/holo_orange_dark"
+            android:background="@drawable/work_button"
             android:onClick="workButton"
             android:text="@string/Work_button"
             android:textAllCaps="true"
             android:textColor="@color/withColor"
-            android:textSize="@dimen/_24sdp" />
+            android:textSize="@dimen/_24sdp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/shopping_butt"
@@ -43,12 +43,13 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:layout_weight="2"
-            android:background="@android:color/holo_blue_bright"
+            android:background="@drawable/shopping_button"
             android:onClick="shoppingButton"
             android:text="@string/Shopping_button"
             android:textAllCaps="true"
             android:textColor="@color/withColor"
-            android:textSize="@dimen/_24sdp" />
+            android:textSize="@dimen/_24sdp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/todo_butt"
@@ -56,12 +57,13 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:layout_weight="2"
-            android:background="@android:color/holo_red_dark"
+            android:background="@drawable/todo_button"
             android:onClick="todoButton"
             android:text="@string/To_do_list"
             android:textAllCaps="true"
             android:textColor="@color/withColor"
-            android:textSize="@dimen/_24sdp" />
+            android:textSize="@dimen/_24sdp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/study_butt"
@@ -69,14 +71,15 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:layout_weight="2"
-            android:background="@android:color/holo_purple"
+            android:background="@drawable/study_button"
             android:onClick="studyButton"
             android:text="@string/Study_button"
             android:textAllCaps="true"
             android:textColor="@color/withColor"
             android:textSize="@dimen/_24sdp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/todo_butt" />
+            app:layout_constraintTop_toBottomOf="@+id/todo_butt"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/monthly_butt"
@@ -84,14 +87,15 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:layout_weight="2"
-            android:background="@android:color/holo_green_light"
+            android:background="@drawable/monthly_button"
             android:onClick="monthlyGoalButton"
             android:text="@string/Monthly_button"
             android:textAllCaps="true"
             android:textColor="@color/withColor"
             android:textSize="@dimen/_24sdp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/study_butt" />
+            app:layout_constraintTop_toBottomOf="@+id/study_butt"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/yearly_butt"
@@ -99,12 +103,13 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:layout_weight="2"
-            android:background="@color/ColorBackground"
+            android:background="@drawable/yearly_button"
             android:onClick="yearlyGoalButton"
             android:text="@string/Yearly_button"
             android:textAllCaps="true"
             android:textColor="@color/withColor"
-            android:textSize="@dimen/_24sdp" />
+            android:textSize="@dimen/_24sdp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/money_butt"
@@ -112,14 +117,15 @@
             android:layout_height="0dp"
             android:layout_margin="4dp"
             android:layout_weight="2"
-            android:background="@color/Yallow"
+            android:background="@drawable/money_button"
             android:onClick="FinancialButton"
             android:text="@string/Money_button"
             android:textAllCaps="true"
             android:textColor="@color/withColor"
             android:textSize="@dimen/_24sdp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/yearly_butt" />
+            app:layout_constraintTop_toBottomOf="@+id/yearly_butt"
+            tools:ignore="UsingOnClickInXml" />
 
 
     </LinearLayout>
@@ -135,7 +141,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.866"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
