@@ -26,5 +26,6 @@
     <string name="Title">Note Title</string>
     <string name="input_note">Write here</string>
     <string name="Save">Save</string>
+    <string name="enter_note">Enter Note</string>
 
 </resources>

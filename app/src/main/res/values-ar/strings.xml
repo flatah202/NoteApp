@@ -28,6 +28,7 @@
     <string name="Title"> عنوان الملاحظة</string>
     <string name="input_note">أكتب هنا</string>
     <string name="Save">حفظ</string>
+    <string name="enter_note">Enter Note</string>
 
 
 </resources>

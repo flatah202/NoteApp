@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.security.PublicKey;
 
@@ -23,26 +24,15 @@ public class Work_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_page);
-        titleNote = (EditText) findViewById(R.id.note_title);
-        save = (Button) findViewById(R.id.save_notes);
-        save_show = (TextView) findViewById(R.id.save_show);
-
-
-
-        //
-        save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                save_show.setText("Title Note: "+titleNote.getText());
-
-
-            }
-        });
-
 
     }// End of Override
 
 
+
+
+    // save_button method
+    public void save_button (View view){
+
+    }// End of save_button method
 
 }// End of Work_page claas

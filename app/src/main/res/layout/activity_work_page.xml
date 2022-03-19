@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:id="@+id/r_page"
+    tools:ignore="InvalidId">
 
 
     <LinearLayout
-        android:id="@+id/liner_page"
+        android:id="@+id/liner_page_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="8dp"
@@ -22,30 +22,70 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:background="@color/Icon"
-            android:hint="@string/Title" />
+            android:hint="@string/Title"
+            android:onClick="save_button"
+            tools:ignore="TextFields" />
 
-        <TextView
-            android:id="@+id/save_show"
+
+        <EditText
+            android:id="@+id/input_note_show"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/Title" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_note" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="@color/Icon"
+            />
 
     </LinearLayout>
 
 
-
-    <Button
+    <LinearLayout
+        android:id="@+id/liner_page_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/save_notes"
-        android:layout_margin="8dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@id/liner_page"
-        android:layout_alignLeft="@id/liner_page"
-        android:background="@color/orange_700"
-        android:text="@string/Save"
+        android:layout_alignLeft="@+id/liner_page_text"
+        android:layout_alignRight="@+id/liner_page_text"
+        android:layout_alignBottom="@id/liner_page_text"
+        android:orientation="horizontal"
+        tools:ignore="NotSibling">
+
+        <Button
+            android:id="@+id/save_notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/work_button"
+            android:text="@string/Save" />
 
 
-        />
+        <Button
+            android:id="@+id/delete_notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/work_button"
+            android:text="@string/Delete" />
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>
