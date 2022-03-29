@@ -36,7 +36,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/meun.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/my_room_notes.xml" value="0.5" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/nav_header_study_options.xml" value="0.20018115942028986" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/notes_room.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/notes_room.xml" value="0.38705035971223023" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/menu/setting_options.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/menu/study_options.xml" value="0.20416666666666666" />
@@ -48,12 +48,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.33" />
-      </ProjectState>
-    </option>
   </component>
 </project>

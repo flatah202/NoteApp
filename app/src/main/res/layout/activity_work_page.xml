@@ -1,91 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liner_page_text"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/r_page"
-    tools:ignore="InvalidId">
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    tools:context=".Work_page">
 
-
-    <LinearLayout
-        android:id="@+id/liner_page_text"
+    <EditText
+        android:id="@+id/note_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/Icon"
+        android:hint="@string/Title"
+        tools:ignore="TextFields" />
+
+
+    <EditText
+        android:id="@+id/input_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        tools:context=".Work_page">
-
-        <EditText
-            android:id="@+id/note_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:background="@color/Icon"
-            android:hint="@string/Title"
-            android:onClick="save_button"
-            tools:ignore="TextFields" />
+        android:hint="@string/enter_note" />
 
 
-        <EditText
-            android:id="@+id/input_note_show"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:hint="@string/enter_note" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:orientation="vertical"
-            android:background="@color/Icon"
-            />
-
-    </LinearLayout>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textSize="28dp"
+        android:background="@color/Icon"
+        android:textColor="@color/black"
+        />
 
     <LinearLayout
         android:id="@+id/liner_page_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/liner_page_text"
         android:layout_alignRight="@+id/liner_page_text"
         android:layout_alignBottom="@id/liner_page_text"
+        android:layout_gravity="center"
         android:orientation="horizontal"
         tools:ignore="NotSibling">
 
         <Button
             android:id="@+id/save_notes"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:layout_weight="1"
             android:background="@drawable/work_button"
+            android:onClick="save_button"
             android:text="@string/Save" />
 
 
         <Button
             android:id="@+id/delete_notes"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:layout_weight="1"
             android:background="@drawable/work_button"
+            android:onClick="delete_button"
             android:text="@string/Delete" />
+
     </LinearLayout>
 
 
-
-
-</RelativeLayout>
+</LinearLayout>

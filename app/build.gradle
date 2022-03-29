@@ -39,7 +39,9 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     implementation 'androidx.navigation:navigation-fragment:2.3.5'
     implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.databinding:databinding-runtime:7.0.4'
     testImplementation 'junit:junit:4.+'
+    implementation 'androidx.core:core:1.2.0'
   
 
     //Material Design
