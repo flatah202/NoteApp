@@ -27,4 +27,7 @@
     <string name="input_note">Write here</string>
     <string name="Save">Save</string>
     <string name="enter_note">Enter Note</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="SET">SET</string>
 </resources>

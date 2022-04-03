@@ -14,6 +14,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/shape_button.xml" value="0.2169230769230769" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/shopping_button.xml" value="0.2169230769230769" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/study_buton.xml" value="1.321875" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/study_button.xml" value="0.2203125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/todo_button.xml" value="0.2203125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/work_button.xml" value="0.2203125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/yearly_button.xml" value="0.2203125" />
@@ -25,7 +26,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_monthly_page.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_save_list_note.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_shopping_page.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_study_page.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_study_page.xml" value="0.25" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_todo_page.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_work_page.xml" value="0.25" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_work_page2.xml" value="0.19010416666666666" />

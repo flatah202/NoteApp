@@ -29,6 +29,9 @@
     <string name="input_note">أكتب هنا</string>
     <string name="Save">حفظ</string>
     <string name="enter_note">Enter Note</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="SET">REST</string>
 
 
 </resources>
