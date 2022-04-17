@@ -9,9 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp">
         <activity
-            android:name=".Save_list_note"
-            android:exported="false" />
-        <activity
             android:name=".Work_page"
             android:exported="false" />
         <activity

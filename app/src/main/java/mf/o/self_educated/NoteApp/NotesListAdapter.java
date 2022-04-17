@@ -1,5 +1,6 @@
 package mf.o.self_educated.NoteApp;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,39 +9,45 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+public class NotesListAdapter extends RecyclerView.Adapter<NotesListAdapter.ListHolder> {
+       public String data[];
+       public Context  context;
 
-public class NotesListAdapter extends RecyclerView.Adapter<NotesListAdapter.NotesViewHolder> {
+    public NotesListAdapter(Context context, String[] data) {
+        this.data = data;
+        this.context = context;
+    }
 
-    private ArrayList<Work_page> notesList = new ArrayList<>();
     @NonNull
     @Override
-    public NotesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new NotesViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.notes_room, parent , false));
+    public ListHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.list_room,parent,false);
+        ListHolder holder = new ListHolder(view);
+
+        return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
-        holder.notes.setText(notesList.get(position).getTitle());
-        holder.titleList.setText(notesList.get(position).getTitle());
+    public void onBindViewHolder(@NonNull NotesListAdapter.ListHolder holder, int position) {
+
+        holder.notesName.setText(data[position]);
     }
 
     @Override
     public int getItemCount() {
-        return notesList.size();
+        return data.length;
     }
 
-    public void setNotesList(ArrayList<Work_page> notesList){
-        this.notesList = notesList;
-        notifyDataSetChanged();
-    }
+    public class ListHolder extends RecyclerView.ViewHolder {
 
-    public class NotesViewHolder extends RecyclerView.ViewHolder {
-        TextView titleList , notes;
-        public NotesViewHolder(@NonNull View itemView) {
+        TextView titleName , notesName;
+        public ListHolder(@NonNull View itemView) {
             super(itemView);
-            titleList = itemView.findViewById(R.id.note_title1);
-            notes = itemView.findViewById(R.id.input_note_show1);
+
+
+            titleName = itemView.findViewById(R.id.TitleName);
+            notesName = itemView.findViewById(R.id.NoteShow);
         }
     }
 }

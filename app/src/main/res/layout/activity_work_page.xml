@@ -10,6 +10,16 @@
     android:orientation="vertical"
     tools:context=".Work_page">
 
+
+
+    <EditText
+        android:id="@+id/note_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/search"
+        tools:ignore="TextFields" />
+
     <EditText
         android:id="@+id/note_title"
         android:layout_width="match_parent"
@@ -30,16 +40,20 @@
         android:layout_marginBottom="8dp"
         android:hint="@string/enter_note" />
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/result"
+        android:layout_margin="8dp"
         android:textSize="28dp"
-        android:background="@color/Icon"
-        android:textColor="@color/black"
+        android:id="@+id/result"
         />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler"
+            android:layout_margin="8dp"/>
+
+
 
     <LinearLayout
         android:id="@+id/liner_page_button"

@@ -30,4 +30,6 @@
     <string name="start">START</string>
     <string name="stop">STOP</string>
     <string name="SET">SET</string>
+    <string name="message_minutes">"Set your timer please ? "</string>
+    <string name="search">search</string>
 </resources>

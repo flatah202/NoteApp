@@ -5,7 +5,7 @@
     android:id="@+id/page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/DefaultColor"
+    android:background="#E7e7E7"
     tools:context=".First_page">
 
 
@@ -34,7 +34,7 @@
             android:onClick="workButton"
             android:text="@string/Work_button"
             android:textAllCaps="true"
-            android:textColor="@color/withColor"
+            android:textColor="@color/black"
             android:textSize="24dp"
             tools:ignore="UsingOnClickInXml" />
 
@@ -48,7 +48,7 @@
             android:onClick="shoppingButton"
             android:text="@string/Shopping_button"
             android:textAllCaps="true"
-            android:textColor="@color/withColor"
+            android:textColor="@color/black"
             android:textSize="24dp"
             tools:ignore="UsingOnClickInXml" />
 
@@ -62,7 +62,7 @@
             android:onClick="todoButton"
             android:text="@string/To_do_list"
             android:textAllCaps="true"
-            android:textColor="@color/withColor"
+            android:textColor="@color/black"
             android:textSize="24dp"
             tools:ignore="UsingOnClickInXml" />
 
@@ -76,7 +76,7 @@
             android:onClick="studyButton"
             android:text="@string/Study_button"
             android:textAllCaps="true"
-            android:textColor="@color/withColor"
+            android:textColor="@color/black"
             android:textSize="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/todo_butt"
@@ -92,7 +92,7 @@
             android:onClick="monthlyGoalButton"
             android:text="@string/Monthly_button"
             android:textAllCaps="true"
-            android:textColor="@color/withColor"
+            android:textColor="@color/black"
             android:textSize="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/study_butt"
@@ -108,7 +108,7 @@
             android:onClick="yearlyGoalButton"
             android:text="@string/Yearly_button"
             android:textAllCaps="true"
-            android:textColor="@color/withColor"
+            android:textColor="@color/black"
             android:textSize="24dp"
             tools:ignore="UsingOnClickInXml" />
 
@@ -122,7 +122,7 @@
             android:onClick="FinancialButton"
             android:text="@string/Money_button"
             android:textAllCaps="true"
-            android:textColor="@color/withColor"
+            android:textColor="@color/black"
             android:textSize="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/yearly_butt"
