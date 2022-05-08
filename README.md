@@ -7,7 +7,7 @@ WHAT IS MY MOTIVATION ?
 
 WHAT DO I LEARNED ?
 
-*I am still learning the baice of java langauge and Android Studio XML.files inculd the interfaces and Navigitons and so on......
+*I am still learning the basic of java langauge and Android Studio XML.files inculd the interfaces and Navigitons and so on......
 *I also have learned how to solve the problems that I face all the time by do some resarches.
 *Having a note all the time to write my ideas when I get it.
 
